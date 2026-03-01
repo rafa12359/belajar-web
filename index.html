@@ -1,229 +1,149 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>selamat datang di web saya</title>
-  </head>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materi TJKT - Rafa Samsa'il Hidayat</title>
   <style>
-    body {
-      background-color:grey;
-      color: white;
+    /* Reset & Dasar */
+    * { box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    body { 
+      background-color: #1a1a1a; 
+      color: #e0e0e0; 
+      line-height: 1.6; 
+      padding: 20px; 
+      max-width: 1100px; 
+      margin: 0 auto; 
     }
+
+    /* Header */
+    h1 { text-align: center; color: #00d4ff; border-bottom: 3px solid #00d4ff; padding-bottom: 10px; }
+    h2 { background: #333; color: #ffcc00; padding: 10px; border-left: 5px solid #ffcc00; margin-top: 40px; }
+    h3 { color: #00ff88; margin-top: 20px; }
+
+    /* Profile Section */
+    .profile-box { background: #262626; padding: 20px; border-radius: 10px; margin-bottom: 20px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .profile-box img { border: 3px solid #00d4ff; border-radius: 8px; transition: 0.3s; }
+    .profile-box img:hover { transform: scale(1.05); }
+
+    /* Styling Tabel Umum */
+    table { width: 100%; border-collapse: collapse; margin: 20px 0; background: #262626; font-size: 0.95rem; }
+    th, td { border: 1px solid #444; padding: 12px; text-align: left; }
+    th { background-color: #00d4ff; color: #000; }
+    tr:nth-child(even) { background-color: #2d2d2d; }
+
+    /* KODE RESPONSIF UNTUK TABEL */
+    @media screen and (max-width: 768px) {
+      table, thead, tbody, th, td, tr { display: block; }
+      thead tr { position: absolute; top: -9999px; left: -9999px; }
+      tr { margin-bottom: 15px; border: 2px solid #00d4ff; border-radius: 8px; }
+      td { border: none; position: relative; padding-left: 50% !important; text-align: left; background: #333; min-height: 40px; border-bottom: 1px solid #444; }
+      td:before { 
+        content: attr(data-label); 
+        position: absolute; left: 10px; font-weight: bold; color: #00d4ff; width: 45%; 
+      }
+    }
+
+    .code-block { background: #000; color: #0f0; padding: 15px; border-radius: 5px; font-family: monospace; }
+    .ip-box { background: #333; padding: 10px; border-left: 3px solid #00ff88; margin: 10px 0; }
   </style>
-  <body>
-   <h1>MATERI TJKT</h1> 
-   <p>NAMA :<B>RAFA SAMSA'IL HIDAYAT</B> </p> 
-  <p>kelas :<b>kelas 10 tjkt</b></p>
-  <img alt="rafa" width="200" src="tes.jpg">
-  <h2>A.materi tes jaringan menggunakan CMD</h2>
-  </body>untuk tes jaringan menggunakan cmd buka comand prompt
-  . (cari "cmd" di menu Start)<br><p style="line higth"></p>
-  Ketik ping google.com atau ping 8.8.8.8 (DNS Google) dan tekan Enter
-  <h2>B.jenis jenis ip config</h2>
-  <body>ip config /all:tampilkan detail lengkap</body><p style="line hight"></p>
-  <body>ip config /release: lepas alamat ip</body><p style="line hight"></p>
-  <body>ip config /renew: dapat kan ip baru </body><p style="line hight"></p>
-  <body>ip /flush: membersihkan cache DNS </body><p style="line hight"></p>
-  <h2>C.ip adres</h2>
-  <h3>apa itu ip adres</h3><p style="line hight"></p>
-  <body>ip address (Internet Protocol Address) adalah label numerik unik 32-bit (IPv4) yang diberikan ke setiap perangkat yang terhubung ke jaringan internet atau lokal untuk komunikasi</body><p style="line hight"></p>
-  <body>berdasar kan kelas nya ip adres di bagi menjadi 3 kelas yaiutu</body><p style="line hight"></p>
-  <body>kelas A :10.10.0.2</body><br>
-  <body>gate way:10.10.0.1</body><br>
-  <body>subnet mask:255.0.0.0</body><br><p style="line hight"></p>
-  <body>kelas B:172.16.0.0</body><br>
-  <body>gate way:172.16.0.1</body><br>
-  <body>subnet mask:255.255.0</body><p style="line hight"></p>
-  <body>kelas c:192.168.0.1</body><br>
-  <body>gate way:192.168.0.1</body><br>
-  <body>subnet mask:255.255.255</body><p style="line hight"></p>
-  <body>kelas D:224.0.0.2</body><br>
-  <body>gate way:224.0.0.2</body><p style="line hight"></p>
- <body>kelas E:240.0.0.2</body><br>
- <body>gate way:240.0.0.1</body><p style="line higt"></p>
- <h2>E.alat alat elektronik</h2>
- <body>berikut alat alat elektronik beserta ke gunaan nya</body><p style="line hight"></p>
- <table border="1">
-  <tr>
-    <th>no</th>
-    <th>peralatan elekteonik</th>
-    <th>wat dan voltase yang di miliki</th>
-  </tr>
-  <tr>
-  <td>1</td>
-  <td>mejikom</td>
-  <td>220V dan 300W</td>
-  </tr>
-  
-  <tr>
-  <td>2</td>
-  <td>tv</td>
-  <td>230V dan 120W</td>
-  </tr>
-  
-  <tr>
-    <td>3</td>
-    <td>setrikar</td>
-    <td>220V dan 300W</td>
-  </tr>
-  
-  <tr>
-    <td>4</td>
-    <td>kulkas</td>
-    <td>220V dan 80W</td>
-  </tr>
-  
-  <tr>
-    <td>5</td>
-    <td>mesin cuci</td>
-    <td>220V dan 300W</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>charger</td>
-    <td>12V dan 25W</td>
-  </tr>
-  
-  
-</table>
-<h2>F.berikut tabel profesi dan peluang usaha dalam bidang IT</h2>
-<table border="1">
-  
-  
-  <tr>
-    <th>jenis pekerjaan</th>
-    <th>deskripsi singkat</th>
-    <th>contoh pekerjaan</th>
-    <th>peluang usaha</th>
-  </tr>
-  
-  
-  <tr>
-    <td>konten kreator</td>
-    <td>seorang yang bertanggung jawab membuat konten hiburan dan edukatif</td>
-    <td>youtuber,influencer.podcaster dan masih banyak lagi</td>
-    <td>endorsement dan kerja sama dengan brand/merchandise dan menjual produk digital</td>
-  </tr>
-  
-  
-  <tr>
-    <td>desain ui/ux</td>
-    <td>ui:fokus pada tampilan meliputi pemilihan warna ikon dan tata letak produk digital sementara ux: fokus pada rasa dan logika bagaimana alur dan pengguna dari awal hingga akhir tujuan</td>
-    <td>ux:bertugas meneliti perilaku pengguna melalui wawancara dan data sementara ui adalah desiner spesialis dalam menciptakan elemen visual</td>
-    <td>jasa pembuatan,menjual desain template.edukasi/kursus online</td>
-  </tr>
-  
-  
-  <tr>
-    <td>soft ware development</td>
-    <td>proses menciptakan/merancang sebuah aplikasi komputer</td>
-    <td>frontend developerbackend developer, mobile aps developer</td>
-    <td>soft ware house,cybersecurity,menjual aset kode</td>
-  </tr>
-  
-  
-  <tr>
-    <td>desain grafis</td>
-    <td>orang profesional yang menciptakan konsep visual menggunakan perangkat lunak komputer</td>
-    <td>layout designer,paclaging designer,motion gtapik</td>
-    <td>agensi desain,frelence design,penjual aset digital,jasa desain konten sosial media.</td>
-  </tr>
-  
-  
-  <tr>
-    <td>web development</td>
-    <td>seni dam ilmu membangun web mulai dari statis sederhana hingga aplikasi web.</td>
-    <td>fronted developer,backend developer,fullstack developer.</td>
-    <td>penyewaan hosting & domain,menjual tema plugin/web agency</td>
-  </tr>
-  
-  
-  <tr>
-    <td>mobile app development</td>
-    <td>pembuatan perangkat lunak yang di rancang khusus untuk berjalan pada perangkat seluler</td>
-    <td>android developer,IOS developer,mobile game developer</td>
-    <td>produk aplikasi mandiri,reskining app,jasa pembuatan aplikasi.</td>
-  </tr>
-  
-  
-  <tr>
-    <td>game development</td>
-    <td>proses menciptakan video game yang melibat kan desain konsep pembuatan aset visual (2D/3D)</td>
-    <td>game tester,level designer,game progamer,game designer</td>
-    <td>edukasi & gamifikasi ad-based game</td>
-  </tr>
-  
-  
-  <tr>
-    <td>internet marketer</td>
-    <td>seseorang yang bertanggubg jawab merancang,menjalan kan dan memantau strategi penasaran</td>
-    <td>performance marketer,email marketer,conten marketing manager</td>
-    <td>dropshiping,menjual produk digital</td>
-  </tr>
+</head>
+<body>
 
+  <h1>MATERI TJKT</h1> 
+  
+  <div class="profile-box">
+    
+    <div>
+      <p>NAMA : <b>RAFA SAMSA'IL HIDAYAT</b></p> 
+      <p>KELAS : <b>10 TJKT</b></p>
+    </div>
+  </div>
 
-<tr>
-  <td>analisis basis data</td>
-  <td>disiplin ilmu yang menggabungkan (manajemen data base) untuk mengelola data</td>
-  <td>data analyst,data base administator busines & data telegent.</td>
-  <td>jasa konsultasi data,penyedia data leaning.</td>
-</tr>
+  <h2>A. Materi Tes Jaringan menggunakan CMD</h2>
+  <p>Untuk tes koneksi, buka Command Prompt dan gunakan perintah berikut:</p>
+  <div class="code-block">
+    ping google.com <br>
+    ping 8.8.8.8
+  </div>
 
+  <h2>B. Jenis-jenis IP Config</h2>
+  <ul>
+    <li><b>ipconfig /all:</b> Tampilkan detail lengkap alamat fisik (MAC) dan IP.</li>
+    <li><b>ipconfig /release:</b> Melepas alamat IP saat ini.</li>
+    <li><b>ipconfig /renew:</b> Meminta alamat IP baru dari server DHCP.</li>
+    <li><b>ipconfig /flushdns:</b> Membersihkan cache DNS agar data web terbaru bisa diakses.</li>
+  </ul>
 
-<tr>
-  <td>konsultan IT</td>
-  <td>yang memberikan saran ahli kepada klien mengenai cara terbaik menggunakan teknologi informasi</td>
-  <td>cybersecurity,consultan cloud,data consultan.</td>
-  <td>mendirikan frima konsultan IT,independent IT dan masih banyak lagi</td>
-</tr>
-
-
-<tr>
-  <td>konsultan jaringan</td>
-  <td>seseorang yang bertugas menganalisis merancang dan menerapkan langkah keamanan untuk melindungi jaringan</td>
-  <td>network security,tester penetration</td>
-  <td>jasa audit,konsultan kepatuhan,managed security dan masih banyak lagi</td>
-</tr>
-
-
-<tr>
-  <td>pembisnis ecomarece</td>
-  <td>pengusaha yang memanfaat kan platform digital untuk memasarkan sebuah produk</td>
-  <td>online shop,market place,& ecomarece manager</td>
-  <td>bisnis reseler,social ecomarece,penyedia logistik dan pergudangan</td>
-</tr>
-
-
-<tr>
-  <td>konsultan SEO</td>
-  <td>seorang profesional yang menganalisis meninjau perubahan pada web</td>
-  <td>link bulider,SEO auditor.</td>
-  <td>agensi SEO,konsultan SEO,pelatihan & kursus SEO</td>
-</tr>
-
-
-<tr>
-  <td>proyek star up </td>
-  <td>organisasi/ritual yabg di rancang untuk mencari model bisnis </td>
-  <td>scrum master,founder,busines deveelopment</td>
-  <td>membangun produk SaaS,startup agregator impact startup</td>
-</tr>
+  <h2>C. IP Address</h2>
+  <p><b>Internet Protocol Address</b> adalah label numerik unik untuk identifikasi perangkat di jaringan.</p>
+  
+  <div class="ip-box">
+    <b>Kelas A:</b> 10.10.0.2 | Mask: 255.0.0.0 | Gateway: 10.10.0.1
+  </div>
+  <div class="ip-box">
+    <b>Kelas B:</b> 172.16.0.2 | Mask: 255.255.0.0 | Gateway: 172.16.0.1
+  </div>
+  <div class="ip-box">
+    <b>Kelas C:</b> 192.168.0.2 | Mask: 255.255.255.0 | Gateway: 192.168.0.1
+  </div>
 
   
-</table>
 
+  <h2>E. Alat Elektronik & Daya</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Peralatan</th>
+        <th>Watt & Voltase</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td data-label="No">1</td><td data-label="Peralatan">Magic Com</td><td data-label="Daya">220V / 300W</td></tr>
+      <tr><td data-label="No">2</td><td data-label="Peralatan">TV</td><td data-label="Daya">230V / 120W</td></tr>
+      <tr><td data-label="No">3</td><td data-label="Peralatan">Setrika</td><td data-label="Daya">220V / 300W</td></tr>
+      <tr><td data-label="No">4</td><td data-label="Peralatan">Kulkas</td><td data-label="Daya">220V / 80W</td></tr>
+    </tbody>
+  </table>
 
-<h2>G.macam-macam aplikasi virtual</h2>
-<h3>1.virtual box</h3><br>
-<body>fungsi & kegunaan nya= di gunakan untuk uji coba aplikasi menjalankan soft ware lama/belajar sistem operasi baru (seperti linux) tanpa merusak komputer lama</body><p style="line hight"></p>
-<body>adapun cara konfigurasi & manfaat nya=sangat mudah cukup instal file exe/dmg lalu buat vm baru melalui antar muka (GUI) yang ramah pengguna,& manfaat nya gratis lintas platform,mendukung banyak fitur dasar seperti snapshot (menyimpan keadaa VM)</body><p style="line hight"></p>
-<h3>2.vm ware</h3>
-<body>fungsi dan kegunaan=vm ware adalah peminpin industri virtualisasi mereka memiliki 2 lini utama:work station(type-2 untuk desktop) dan exic (type1) (untuk type -1 server) </body><p style="line hight"></p>
-<body>konfogurasi dan manfaat=lebih kompleks dan profesional & untuk manfaat nya sangat stabil,peforma tinggi dan memliki manajemen jaringan yang sangat kuat</body>
-<h3>3.proxmox virtual envirotmen (VE)</h3>
-<body>fungsi & kegunaan nya mengelola server fisik menjadi klaster server vritual.sangat populer untuk home lab dan penyedia layanan hosting.</body><p style="line hight"></p>
-<body>manfaat dan konfigurasi=di lakukan memlalui antar muka berbasi web (web GUI) setelah instalasi selesai tidak burtuh apkikasi remote khusus,cukup pakai browser & manfaat nya gratis tanpa batasan fitur,& sangat efisien dalam penggunaan sumber daya </body>
+  <h2>F. Profesi & Peluang Usaha IT</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Jenis Pekerjaan</th>
+        <th>Deskripsi</th>
+        <th>Peluang Usaha</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Jenis Pekerjaan">Konten Kreator</td>
+        <td data-label="Deskripsi">Membuat konten edukatif/hiburan.</td>
+        <td data-label="Peluang">Endorsement, Jasa Video.</td>
+      </tr>
+      <tr>
+        <td data-label="Jenis Pekerjaan">UI/UX Design</td>
+        <td data-label="Deskripsi">Fokus pada tampilan & alur aplikasi.</td>
+        <td data-label="Peluang">Jasa desain, Jual template.</td>
+      </tr>
+      <tr>
+        <td data-label="Jenis Pekerjaan">Web Development</td>
+        <td data-label="Deskripsi">Membangun website statis/dinamis.</td>
+        <td data-label="Peluang">Software House, Jasa Hosting.</td>
+      </tr>
+    </tbody>
+  </table>
 
-  </html>
+  <h2>G. Macam-Macam Aplikasi Virtual</h2>
+  <h3>1. VirtualBox</h3>
+  <p>Gratis dan mudah digunakan untuk pemula belajar sistem operasi baru seperti Linux.</p>
+
+  <h3>2. VMware</h3>
+  <p>Standar industri, sangat stabil, dan memiliki fitur jaringan yang sangat kuat untuk profesional.</p>
+
+  <h3>3. Proxmox (VE)</h3>
+  <p>Berbasis Web GUI, sangat efisien untuk mengelola server fisik menjadi banyak Virtual Machine.</p>
+
+</body>
+</html>
